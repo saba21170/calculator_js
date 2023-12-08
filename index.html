@@ -11,9 +11,13 @@
 </head>
 <body>
     <div class="calculator">
+        <div id="loading-message"></div>
         <input type="text" id="input" placeholder="Enter expression" readonly>
+       
+        
         <div id="buttons">
             <button onclick="clearInput()">C</button>
+            
             <button onclick="removeLastCharacter()">AC</button>
             <button class="operator" onclick="appendCharacter('%')">%</button>
             <button class="operator">Console log</button>
@@ -38,7 +42,7 @@
             
 
             
-            <button class="operator" onclick="calculate()">=</button>
+            <button class="operator" onclick="startCalculation()">=</button>
         
         </div>
     </div>
